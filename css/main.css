@@ -14,10 +14,12 @@ body{
   font-family: 'Montserrat', sans-serif
 }
 
-/*.header{
+.header{
   width: 100%;
   background-image: url(../assets/images/hero.gif);
-}*/
+  background-size: cover;
+  height: 500px;
+}
 
 body .imgtotal{
   width: 100%;
