@@ -57,14 +57,14 @@ nav{
 }
 
 /*Flotamos la lista del menú hacia la derecha*/
-ul{
+header ul{
   float: right;
   font-size: 1.125rem;
   /*font-weight: bold;*/
 }
 
 /* Declaramos la lista del menú inline blok*/
-li{
+header li{
   color: #fff;
   display: inline-block;
   margin-right: 35px;
@@ -72,7 +72,7 @@ li{
   font-weight: 300;
 }
 
-li:hover{
+ header li:hover{
   color: #ff00bf;
 }
 .liborderradius{
@@ -213,4 +213,76 @@ main{
   padding-top: 0;
   bottom: 70px;
   float: right;
+}
+.footer {
+  background-color: #333447;
+  width: 100%;
+  height: 545px;
+  display: inline-block;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #ff00bf;
+}
+.footer-list {
+  overflow: auto;
+}
+.section5{
+  float: left;
+  line-height: 50px;
+  margin-right: 130px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+.section5 h4{
+  text-transform: uppercase;
+  color:white;
+}
+.section5 ul img {
+  list-style: none;
+  width: 127px;
+  height: 40px;
+  margin-top: 36px;
+}
+.section5 ul{
+  list-style: none;
+}
+.icons{
+  display: block;
+  clear: left;
+  text-align: center;
+}
+/*dandole color y quitandole el color y subrayado propio*/
+.icomoon {
+  margin-top: 20px;
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+}
+/*a nuestro iconos los colocamos en una lista para poder moverlos  en conjunto y darles posicionamiento y tamaño con display:inline-block fácilmente */
+.icomoon li {
+  text-align: center;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 18px;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  left: 50%;
+  border-radius: 100px ;
+}
+/*le damos tamaño a la linea central y ubicamos al centro con margin left*/
+.line hr{
+  width: 45%;
+  margin-top: 19px;
+  margin-left: 26%;
+}
+/*con margin left posicionamos nuestro parrafo pie de página*/
+.line p{
+    margin-left: 43%;
+    color: white;
 }
