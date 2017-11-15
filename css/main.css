@@ -1,288 +1,452 @@
-/*
- * Estilos de tu proyecto
- */
+ /*reusable classes*/
 
- /*Establecemos estilos generales para todo le cuerpo de la página*/
-
- *{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
-
-body{
-  font-family: 'Montserrat', sans-serif
+ *, ::after, ::before{
+    box-sizing: border-box;
 }
 
-.header{
-  width: 100%;
-  background-image: url(../assets/images/hero.gif);
-  background-size: cover;
-  height: inherit;
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-body .imgtotal{
-  width: 100%;
-  /*display: inline-block;*/
+.toUpperCase {
+   text-transform: uppercase;
 }
 
+/*Styles for Nav*/
 
-/*Para manjear el tamaño de la imagen de lyft*/
-.imglogo{
-  display: inline-block;
-  width: 67px;
-  height: 46px;
-}
-
-header{
-  /*background-color: transparent;*/
-  background-image: url(../assets/images/hero.gif);
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  font-weight: 700px;
-  padding: 20px 150px 20px 80px;
-  z-index: 1000;
-  padding-top: 40px;
-  padding-bottom: 40px;
+nav {
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
 }
 
-/*Establecemos el tamaño de linea del nav del header*/
-nav{
-  line-height: 40px;
+.text-lyft {
+    width: 55%;
+    position: absolute;
+    display: inline-block;
+    font-size: 2em;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
 }
 
-/*Flotamos la lista del menú hacia la derecha*/
-header ul{
-  float: right;
-  font-size: 1.125rem;
-  /*font-weight: bold;*/
+.text-lyft a {
+    text-align: left;
+    width: 10%;
+    margin: 0;
 }
 
-/* Declaramos la lista del menú inline blok*/
-header li{
-  color: #fff;
-  display: inline-block;
-  margin-right: 35px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+.text-lyft img {
+    width: 9%;
+    color: #fff;
 }
 
- header li:hover{
-  color: #ff00bf;
-}
-.liborderradius{
-  border: 1px solid white;
-  border-radius: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-main{
-  z-index: 800;
-  width: 100%;
-  height: 300px;
-  margin-top: 0;
+.menu {
+    width: 40%;
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
 }
 
-.boxwhite{
-  display: inline-block;
-  width: 30%;
-  height: 500px;
-  float: right;
-  background-color: white;
-  margin-right: 0 !important;
+.menu li{
+    margin: 0 0 0 45px;
+    font-size: 1.3em;
+    letter-spacing: 1px;    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
-.firtssection{
-  background-color: #642585;
-  column-count: 2;
-  column-gap: 10px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 50px;
-  margin-bottom: 0;
-  outline: 1px solid red;
-  }
-
-.colums{
-  color: white;
-
+#button {
+    border-color: #fff;
+    border-radius: 30%;
 }
 
-.colums img{
-  max-width: 100%;
+/*Styles for Header*/
+
+.container-header {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-.secondsection{
-  position: relative;
-  width: 100%;
-  height: 120%;
-  background: white;
-  outline: 1px solid red;
+
+.container-image {
+    width: 100%;
 }
-.secondsection .box2{
-  position: absolute;
-  padding-top: 4%;
-  margin-top: 1%;
-  top: 0;
-  padding-right: 4%;
-  margin-left: 2%;
-  width: 30%;
-  height: 35%;
-  color:black;
-  /*outline: 1px solid red;*/
+
+.container-image img {
+    display: block;
+    width: 100%;
 }
-.box2 p{
-  padding-top: 7%;
+
+.form {
+    width: 42%;
+    position: absolute;
+    float: right;
+    list-style: none;
+    text-align: left;
+    background: #fff;
+    left:58%;
+    top: 50%;
+    transform: translateY(-40%);
 }
-.box2 h2{
-  font-size: 10px;
+
+.container-form {
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-top: 70px;
 }
-/*posicionando video*/
-/*.secondsection iframe {*/
-.video-one{
-  display: inline-block;
-  top: 20px;
-  padding-top: 0;
-  bottom: 80px;
-  float: right;
+
+.container-text {
+    width: 55%;
+    padding-bottom: 20px;
 }
-/*Posicionando nuestra tercera section*/
-.section3{
-  position: relative;
-  width: 100%;
-  height: 120%;
-  background: white;
-  outline: 1px solid black;
-  margin-right: 0.5%
-  outline: 3px solid purple;
+
+.container-span {
+    color: #352384;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 10px;
 }
-.section3 .box3{
- display: inline-block;
- bottom: 100px;
- width: 30%;
- height: 35%;
- color:black;
- padding-left: 5%;
- padding-top: 4%;
+
+.container-span-down {
+    color: #352384;
+    font-size: 15px;
 }
-/*posicionando titulos y parrafos*/
-.box3 p{
-  padding-top: 4%;
+
+form {
+    width: 100%;
 }
-.box3 h2{
-  font-size: 10px;
+
+.control-input {
+    width: 100%;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #000;
 }
-.video-two{
-  float: left;
-  top: 0;
-  outline: 1px solid BLACK;
+
+.container-input label {
+    text-align: left;
+    display: block;
+    color: #fff;
 }
-.section4{
-  position: relative;
-  width: 100%;
-  height: 120%;
-  background: white;
-  outline: 1px solid red;
+
+.container-input input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding-bottom: 8px;
 }
-.section4 .box4{
-  position: absolute;
-  padding-top: 4%;
-  margin-top: 0;
-  top: 0;
-  padding-right: 4%;
-  margin-left: 2%;
-  width: 30%;
-  height: 40%;
-  color:black;
-  /*outline: 1px solid red;*/
+
+.container-button-link {
+    width: 100%;
+    position: relative;
 }
-.box4 p{
-  padding-top: 7%;
+
+.control-button {
+    display: inline-block;
+    padding-bottom: 25px;
 }
-.box4 h2{
-  font-size: 10px;
+
+.control-button button{
+    background-color: #FF00BF;
+    color: #fff;   
+    border: 1px solid #FF00BF;
+    padding: 15px 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    outline: 0;
+    letter-spacing: 1px;
 }
-.video-three{
-  display: inline-block;
-  top: 0;
-  padding-top: 0;
-  bottom: 70px;
-  float: right;
+
+.control-link {
+    position: absolute;
+    display: inline-block;
+    top: 30%;
+    transform: translateY(-50%);
+    margin-left: 35px;
 }
-.footer {
-  background-color: #333447;
-  width: 100%;
-  height: 545px;
-  display: inline-block;
+
+.control-link a {
+    font-size: 20px;
+    color: #728099;
 }
-.footer a {
-  text-decoration: none;
-  color: #fff;
+
+.sumilla {
+    font-size: 0.77rem;
+    color: #728099;
+    padding-bottom: 50px;
 }
-.footer a:hover {
-  text-decoration: underline;
-  color: #ff00bf;
+
+/*Styles for First-Section*/
+
+.first-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #76278F 5%, #2B1E66 100%);
 }
-.footer-list {
-  overflow: auto;
+
+.section-container {
+    width: 85%;
+    margin-top: 0;
+    margin: auto;
+    padding: auto;
+    padding-top:130px; 
+    padding-bottom: 50px;
+
 }
-.section5{
-  float: left;
-  line-height: 50px;
-  margin-right: 130px;
-  margin-top: 60px;
-  margin-left: 100px;
+.container-letter {
+    position: relative;
+    width: 100%;
+    margin: 0;
 }
-.section5 h4{
-  text-transform: uppercase;
-  color:white;
+
+.row {
+    width: 472px;
+    display: inline-block;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.section5 ul img {
-  list-style: none;
-  width: 127px;
-  height: 40px;
-  margin-top: 36px;
+
+.container-row {
+    width: 100%;
+    margin-bottom: 62px;
 }
-.section5 ul{
-  list-style: none;
+
+.container-row h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.icons{
-  display: block;
-  clear: left;
-  text-align: center;
+
+#independent-text {
+    width: 110%;
 }
-/*dandole color y quitandole el color y subrayado propio*/
-.icomoon {
-  margin-top: 20px;
-  color: #fff;
-  list-style: none;
-  display: inline-block;
+
+.image {
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    padding-left: 100px;
 }
-/*a nuestro iconos los colocamos en una lista para poder moverlos  en conjunto y darles posicionamiento y tamaño con display:inline-block fácilmente */
-.icomoon li {
-  text-align: center;
-  border: 1px solid #fff;
-  display: inline-block;
-  padding: 18px;
-  height: 50px;
-  width: 50px;
-  margin-left: 20px;
-  left: 50%;
-  border-radius: 100px ;
+
+.image img {
+    display: block;
+    height: 500px;
 }
-/*le damos tamaño a la linea central y ubicamos al centro con margin left*/
-.line hr{
-  width: 45%;
-  margin-top: 19px;
-  margin-left: 26%;
+
+/*Styles for Second-Section*/
+
+.second-section {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
 }
-/*con margin left posicionamos nuestro parrafo pie de página*/
-.line p{
-    margin-left: 43%;
-    color: white;
+
+.section-next-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+.container-letter-black {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.row-next {
+    width: 35%;
+    display: inline-block;
+    color: #000;
+    padding: 0;
+}
+
+.container-row-black {
+    width: 350px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.link-p a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container-row-black h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-black {
+    margin-top: 30px;
+}
+
+.section-video {		 
+    position: absolute;		     
+    display: inline-block;		      
+    width: 65%;
+    height: 500px;	
+
+}		  
+          
+.section-video iframe {
+    width: 100%;
+    height: 100%;
+}		     
+
+/*Styles for Third-Section*/
+
+.third-section {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.row-next-third {
+    position: absolute;
+    display: inline-block;
+    width: 31%;
+    color: #000;
+    padding: 0;
+    left: 67%;
+}
+
+/*Styles for Quarter-Section*/
+
+.quarter-section {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+} 
+
+/*Styles for Footer*/
+
+.container-footer {
+    width: 100%;
+    background-color: #333447;
+}
+
+.first-section-footer {
+    width: 100%;
+}
+
+.lists {
+    position: relative;
+    color: #fff;
+    width: 85%;
+    padding-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: inline-block;
+    width: 24%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.list h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 0;
+    color: #fff;
+}
+
+.list ul {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.list ul li:hover {
+    color: #FF00BF;
+}
+
+.list ul li {
+    list-style: none;
+    margin-bottom: 33px;
+    cursor: pointer;
+}
+
+.icon-black {
+    position: absolute;
+    display: inline-block;
+    width: 25%;
+    min-height: 1px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.icon-black img {
+    display: block;
+    width: 133px;
+    height: 41px;
+    margin-bottom: 50px;
+}
+
+.second-section-footer {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.icons-white {
+    display: inline-block;
+    border-radius: 100%;
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+.span {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+

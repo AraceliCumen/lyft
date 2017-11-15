@@ -1,15 +1,36 @@
+# Lyft
 
-# Reto Lyft
-## Este reto consiste en crear una pagina web igual a nuestra original que la puedes encontrar en la siguiente pagina web:
-https://www.lyft.com/
-### Para lograrlo seguir una serie de instrucciones:
-* Hacer fork
-* Clonar repositorio (con git clone)en el cual hayaremos las images a utilizar junto con las instrucciones.
-* Trabajamos con HTML5.
-* CSS3
-* Ahora ya podemos trabajar en nuestro repositorio local y poder realizar trabajo colaborativo.
+Lyft es una empresa de redes de transporte con sede en San Francisco ,California. Desarolla, comercializa y opera la aplicacion movil de trasporte de automoviles Lyft. Lanzado en junio del 2012 Lyft opera en aproximadamente en 300 ciudades en los Estados Unidos incluida Nueva York ,San Francisco y los angeles y ahora tambien en Peru , brinda 18.7 millones de viajes al mes.
 
-## Colaboradoras:
-* Perla Blanco.
-* Araceli Cumen.
+## Medios de transporte Lyft
+<ul>
+<li>La linea Lyft</li>
+<li> Lyft</li>
+<li>Lyft plus</li>
+<li>Lyft premier</li>
+<li>Lyft lux</li>
+</ul>
 
+***
+
+## Lyft
+
+
+![Lyft Website](docs/fullpage.png)
+
+
+### Videos Lyft
+  [Lyft innovacion](https://www.youtube.com/watch?v=fLSmUWOYpKw)
+  [Lyft ](https://www.youtube.com/watch?v=V7j8Aqxmbs8)
+  [Lyft](https://www.youtube.com/watch?v=xj2VWLV0xCU)
+
+### videos lyft hallowen
+  [filipinas](https://youtu.be/8-j21rCyVK4)
+  [filadelfia](https://www.youtube.com/user/LyftVideos)
+  [EEUU](https://youtu.be/1vycaHQgYOs)
+
+
+### Colaboradores:
+
+* Geraldine huaman.
+* Betsy Vidal.
